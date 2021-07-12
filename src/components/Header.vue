@@ -1,6 +1,6 @@
 <template>
-    <div class="header-container">
-      <nav class="nav-container">
+    <div class="header-container container">
+      <nav class="nav-container container">
 
             <div class="logo-container">
                 <img src="../assets/dc-logo.png" alt="">
@@ -31,12 +31,17 @@ export default {
 
 <style lang="scss" scoped>
   .header-container{
-      width: 1200px;
+      
     
-      .nav-container {
+      .container {
           display: flex;
           justify-content: space-between;
           align-items: center;
+          .logo-container{
+              img{
+                  width: 70px;
+              }
+          }
          
 
         ul{
