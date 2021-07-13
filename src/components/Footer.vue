@@ -47,11 +47,24 @@
                         <li>DC Power Visa</li>
                     </ul>
                 </div>
-            </div>
-            <div class="logo-container">
-                <div>
-                    <img src="../assets/dc-logo-bg.png" alt="">
+                 <div class="logo-container">
+                    <div>
+                        <img src="../assets/dc-logo-bg.png" alt="">
+                    </div>
                 </div>
+            </div>
+           
+        </div>
+        <div class="button-footer">
+            <button>SIGN-UP NOW!</button>
+
+            <div class="social-content">
+                    <span>FOLLOW US</span>
+                <img src="../assets/footer-facebook.png" alt="" />
+                <img src="../assets/footer-twitter.png" alt="" />
+                <img src="../assets/footer-youtube.png" alt="" />
+                <img src="../assets/footer-pinterest.png" alt="" />
+                <img src="../assets/footer-periscope.png" alt="" />
             </div>
         </div>
     </div>
@@ -62,11 +75,14 @@ export default {
     name: 'Footer'
 }
 </script>
+
 <style lang="scss" scoped>
 
         .footer-container{
             background-image: url('../assets/footer-bg.jpg');
-              position: relative;  
+              position: relative;
+              overflow: hidden;
+              
                 .footer-content{
                     padding: 50px;
 
@@ -87,18 +103,47 @@ export default {
                                  color: white;
                              }
                         }
-
-                        
                 }
                 .logo-container{
                         img {
-                    height: 500px;
+                    
                     position: absolute;
-                    top: 50%;
+                    top: 40%;
+                    left: 80%;
                     transform: translate(-100%, -50%);
+                   
                     }
                 }
             }
+            .button-footer{
+                height: 80px;
+                background-color: #191919;
+                display: flex;
+                justify-content: space-around;
+                align-items:center ;
+                
+                    button{
+                        background-color: #303030;
+                        color: white;
+                        border: 1px solid blue;
+                        height: 60px;
+                        padding: 10px;
+                    }
+
+            }
+                .social-content{
+                
+                    span{
+                        color: blue;
+                        font-size: 15px;
+                        
+                    }
+                    img{
+                        padding: 10px;
+                        vertical-align: middle;
+                    }
+                }
+            
         }
     
 </style>

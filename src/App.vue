@@ -2,6 +2,7 @@
   <div id="app">
     <Header />
     <Main />
+    <Merchandise />
     <Footer />
   
     
@@ -12,6 +13,7 @@
 <script>
 import Header from './components/Header.vue';
 import Main from './components/Main.vue';
+import Merchandise from './components/Merchandise.vue';
 import Footer from './components/Footer.vue';
 
 
@@ -20,7 +22,8 @@ export default {
   name: 'App',
   components: {
     Header,
-    Main, 
+    Main,
+    Merchandise, 
     Footer
     
 
