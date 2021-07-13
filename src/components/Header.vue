@@ -5,8 +5,12 @@
             <div class="logo-container">
                 <img src="../assets/dc-logo.png" alt="">
             </div>
-      
             <ul>
+                <li v-for="element in menuLinks" :key="element.index">
+                    {{element.name}}
+                </li>
+            </ul>
+          <!--  <ul>
                 <li>CHARACTERS</li>
                 <li>COMICS</li>
                 <li>MOVIES</li>
@@ -17,15 +21,64 @@
                 <li>FANS</li>
                 <li>NEWS</li>
                 <li>SHOP</li>
-            </ul>
+            </ul>-->
         </nav>
     </div>
 </template>
 
 <script>
 export default {
-    name:'Header'
-}
+    name:'Header',
+    
+    data: function(){
+        return{
+            menuLinks:[
+            {
+                href: '#',
+                name: 'CHARACTERS',
+            },
+            {
+                href: '#',
+                name: 'COMICS',
+            },
+            {
+                href: '#',
+                name:'MOVIES',
+            },
+            {
+                href: '#',
+                name:'TV',
+            },
+            {
+                href: '#',
+                name: 'GAMES',
+            },
+            {
+                href: '#',
+                name: 'COLLECTIBLES',
+            },
+            {
+                href: '#',
+                name: 'VIDEOS',
+            },
+            {
+                href: '#',
+                name: 'FANS',
+            },
+            {
+                href: '#',
+                name: 'NEWS',
+            },
+            {
+                href: '#',
+                name: 'SHOP',
+            },
+        ]
+    }
+        
+ },     
+    
+};
 </script>
 
 

@@ -47,21 +47,19 @@ export default {
                 div{
                     display: flex;
                     align-items: center;
-                }
-
-           
-             img{
+                    img{
                  width: 50px;
-                  &:nth-child(4){
-                         font-size: 30px;
+                 margin-top: 13px;
+                  &:nth-last-child(4){
+                         width: 30px;
                      }
                 
-             }
-                
-             
+                     }
+                }
              span{
                  color: white;
                  font-size: 12px;
+                 padding-left: 10px;
                 
              }
          }
