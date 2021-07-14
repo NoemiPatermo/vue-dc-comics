@@ -28,7 +28,7 @@ export default {
     Footer
     
   },
-  data: function() { //creiamo un function che ci ritorna il jsons perché non è component!
+  data: function() { //creiamo una function che ci ritorna il jsons perché non è component!
     return {
       comics: comicsJson,
       

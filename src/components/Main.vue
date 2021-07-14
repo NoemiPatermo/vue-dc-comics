@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Card from './Card.vue';// qui importi il tuo component Card
+import Card from './Card.vue'; // qui importi il tuo component Card
 
 export default {
     name: 'Main',
