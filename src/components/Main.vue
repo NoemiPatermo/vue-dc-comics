@@ -21,7 +21,7 @@ export default {
     components: { // elenchi i  tuoi components
         Card,
     },
-    props: { //indica che è un array
+    props: { //indica che è un array, usi la coppia chiave-valore
         comics: Array,
     },
     created () {

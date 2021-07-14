@@ -115,6 +115,10 @@ export default {
                     border-bottom: 1px solid blue;
                     cursor: pointer;
                 }
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
             }
         }
       }

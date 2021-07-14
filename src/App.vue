@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header />
+    <Header /> 
     <Main :comics="comics"/> <!--prendi il jsons dalla funzione (comics in comics) e passalo al main-->
     <Merchandise />
     <Footer />
@@ -31,6 +31,7 @@ export default {
   data: function() { //creiamo un function che ci ritorna il jsons perché non è component!
     return {
       comics: comicsJson,
+      
     };
   },
 }
