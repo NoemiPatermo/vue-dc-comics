@@ -5,9 +5,10 @@
             <div class="logo-container">
                 <img src="../assets/dc-logo.png" alt="">
             </div>
+            <!--ciclo con il v-for per stampare la mia nav, usa la chiave per identificae attributo univoco-->
             <ul>
-                <li v-for="element in menuLinks" :key="element.index">
-                    {{element.name}}
+                <li v-for="element in menuLinks" :key="element.id">
+                   <a href="#">{{element.name}}</a> 
                 </li>
             </ul>
           <!--  <ul>
@@ -28,49 +29,51 @@
 
 <script>
 export default {
+
     name:'Header',
     
-    data: function(){
+    data: function() {  //appena viene caricato il componente, viene lanciata subito la funzione per poter generare il data
+                            //che ti torna un oggetto
         return{
             menuLinks:[
             {
-                href: '#',
+                id: 0,
                 name: 'CHARACTERS',
             },
             {
-                href: '#',
+                id: 1,
                 name: 'COMICS',
             },
             {
-                href: '#',
+                id: 2,
                 name:'MOVIES',
             },
             {
-                href: '#',
+                id: 3,
                 name:'TV',
             },
             {
-                href: '#',
+                id: 4,
                 name: 'GAMES',
             },
             {
-                href: '#',
+                id: 5,
                 name: 'COLLECTIBLES',
             },
             {
-                href: '#',
+                id: 6,
                 name: 'VIDEOS',
             },
             {
-                href: '#',
+                id: 7,
                 name: 'FANS',
             },
             {
-                href: '#',
+                id: 8,
                 name: 'NEWS',
             },
             {
-                href: '#',
+                id: 9,
                 name: 'SHOP',
             },
         ]
