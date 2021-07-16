@@ -4,9 +4,6 @@
     <Main :comics="comics"/> <!--prendi il jsons dalla funzione (comics in comics) e passalo al main-->
     <Merchandise />
     <Footer />
-  
-    
-  
   </div>
 </template>
 
